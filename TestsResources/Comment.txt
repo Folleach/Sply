@@ -1,0 +1,5 @@
+#Hello
+temp=variable
+#It's comment
+and=other
+variables=here
