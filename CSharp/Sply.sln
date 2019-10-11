@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sply", "Sply\Sply.csproj", "{5B3BDDF7-ADFC-4F7B-AFAA-A18FF1921866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sply.Tests", "Sply.Tests\Sply.Tests.csproj", "{93B99554-7A9E-411B-BAA6-B0CE619699CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B3BDDF7-ADFC-4F7B-AFAA-A18FF1921866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B3BDDF7-ADFC-4F7B-AFAA-A18FF1921866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B3BDDF7-ADFC-4F7B-AFAA-A18FF1921866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B3BDDF7-ADFC-4F7B-AFAA-A18FF1921866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B99554-7A9E-411B-BAA6-B0CE619699CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B99554-7A9E-411B-BAA6-B0CE619699CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B99554-7A9E-411B-BAA6-B0CE619699CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B99554-7A9E-411B-BAA6-B0CE619699CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BC099C9-16D6-44C1-B110-B40E42D81CF7}
+	EndGlobalSection
+EndGlobal
