@@ -1,0 +1,6 @@
+#CSharp
+bin/
+obj/
+packages/
+.vs/
+TestResults/
