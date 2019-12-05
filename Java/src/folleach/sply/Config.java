@@ -8,7 +8,7 @@ public class Config
     public final String Separator;
     public final char CommentCharacter;
 
-    public HashMap<String, String> _dictionary = new HashMap<>();
+    private HashMap<String, String> _dictionary = new HashMap<>();
 
     public Config(String separator, char commentCharacter)
     {
@@ -26,7 +26,7 @@ public class Config
         this("=", '#');
     }
 
-    public int getLength()
+    public int getCount()
     {
         return _dictionary.size();
     }

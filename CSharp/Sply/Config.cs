@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 
 namespace Sply
@@ -9,14 +8,14 @@ namespace Sply
         public readonly char Separator;
         public readonly char CommentCharacter;
 
-        public Dictionary<string, string> _dictionary = new Dictionary<string, string>();
+        private Dictionary<string, string> _dictionary = new Dictionary<string, string>();
 
         public string this[string key]
         {
             get => _dictionary.ContainsKey(key) ? _dictionary[key] : key;
         }
 
-        public int Length
+        public int Count
         {
             get => _dictionary.Count;
         }

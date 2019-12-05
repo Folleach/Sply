@@ -17,7 +17,7 @@ namespace Sply.Tests
 
             Assert.AreEqual(config["key"], "value");
             Assert.AreEqual(config["i"], "j");
-            Assert.AreEqual(config.Length, 2);
+            Assert.AreEqual(config.Count, 2);
         }
 
         [TestMethod]
@@ -31,7 +31,7 @@ namespace Sply.Tests
             Assert.AreEqual(config["temp"], "variable");
             Assert.AreEqual(config["and"], "other");
             Assert.AreEqual(config["variables"], "here");
-            Assert.AreEqual(config.Length, 3);
+            Assert.AreEqual(config.Count, 3);
         }
 
         [TestMethod]
@@ -43,7 +43,7 @@ namespace Sply.Tests
             config.Load(file);
 
             Assert.AreEqual(config["hello"], "I am curious...");
-            Assert.AreEqual(config.Length, 1);
+            Assert.AreEqual(config.Count, 1);
         }
 
         [TestMethod]
@@ -58,7 +58,7 @@ namespace Sply.Tests
             Assert.AreEqual(config["a b   "], "o");
             Assert.AreEqual(config["a"], "b");
             Assert.AreEqual(config["c"], "d ");
-            Assert.AreEqual(config.Length, 4);
+            Assert.AreEqual(config.Count, 4);
         }
 
         [TestMethod]
@@ -71,7 +71,7 @@ namespace Sply.Tests
 
             Assert.AreEqual(config["Many"], "S=e=p=a=r=a=t=o=r=s=");
             Assert.AreEqual(config["a"], "c=b");
-            Assert.AreEqual(config.Length, 2);
+            Assert.AreEqual(config.Count, 2);
         }
 
         [TestMethod]
@@ -84,7 +84,7 @@ namespace Sply.Tests
 
             Assert.AreEqual(config["key"], "value");
             Assert.AreEqual(config["how"], "json");
-            Assert.AreEqual(config.Length, 2);
+            Assert.AreEqual(config.Count, 2);
         }
 
         [TestMethod]
@@ -96,7 +96,7 @@ namespace Sply.Tests
             config.Load(file);
 
             Assert.AreEqual(config["u"], "v");
-            Assert.AreEqual(config.Length, 1);
+            Assert.AreEqual(config.Count, 1);
         }
 
         [TestMethod]
@@ -109,7 +109,7 @@ namespace Sply.Tests
 
             Assert.AreEqual(config["key"], "");
             Assert.AreEqual(config["otherKey"], "a");
-            Assert.AreEqual(config.Length, 2);
+            Assert.AreEqual(config.Count, 2);
         }
 
         [TestMethod]
@@ -121,7 +121,7 @@ namespace Sply.Tests
             config.Load(file);
 
             Assert.AreEqual(config[""], "It's false, and cake");
-            Assert.AreEqual(config.Length, 1);
+            Assert.AreEqual(config.Count, 1);
         }
 
         [TestMethod]
@@ -132,7 +132,7 @@ namespace Sply.Tests
             Config config = new Config(commentCharacter: 'a');
             config.Load(file);
 
-            Assert.AreEqual(config.Length, 0);
+            Assert.AreEqual(config.Count, 0);
         }
     }
 }
